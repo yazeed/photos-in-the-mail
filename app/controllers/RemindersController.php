@@ -25,7 +25,7 @@ class RemindersController extends Controller {
 				return Redirect::back()->withInput()->with('flash_message', Lang::get($response));
 
 			case Password::REMINDER_SENT:
-				return Redirect::to('login')->withInput()->with('flash_message', Lang::get($response));
+				return Redirect::to('login')->withInput()->withFlashMessage(Lang::get($response));
 		}
 	}
 
