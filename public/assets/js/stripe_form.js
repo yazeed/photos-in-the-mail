@@ -103,7 +103,7 @@
         });
 
         // Setup vars for billing name
-        var $stripeBillingName = $('.billing-form [name="name"]'),
+        var $stripeBillingName = $('.billing-form [name="name"], .billing-form [name="stripeBillingName"]'),
             $fname1 = $('[name="f-name1"]'),
             $lname1 = $('[name="l-name1"]');
         // Populate the visible fields if we have them
