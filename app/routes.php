@@ -20,7 +20,7 @@ Route::get('/', function()
     {
         return Redirect::to('/users/' . Auth::user()->id);
     }
-    return View::make('index');
+    return View::make('index', ['bodyClass' => 'front']);
 });
 
 // Helper AJAX to get if user exists by email.

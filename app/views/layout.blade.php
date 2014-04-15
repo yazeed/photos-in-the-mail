@@ -21,7 +21,11 @@
   <!-- include HTML5 IE enabling script and stylesheet for IE -->
   <!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
 </head>
+@if(isset($bodyClass))
+<body class="{{ $bodyClass }}">
+@else
 <body>
+@endif
   <!-- main container of all the page elements -->
   <div id="wrapper" class="add">
     <!-- header of the page -->
