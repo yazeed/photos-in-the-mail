@@ -59,7 +59,7 @@ class PlansTableSeeder extends Seeder {
             'metadata' => ['prints_per_month' => 25]
         ];
         
-        Stripe::setApiKey($_ENV['STRIPE_SECRET']);
+        Stripe::setApiKey(getenv('STRIPE_SECRET'));
         Stripe_Plan::create($plan1);
         Stripe_Plan::create($plan2);
         Stripe_Plan::create($plan3);

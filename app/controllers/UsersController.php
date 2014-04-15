@@ -72,7 +72,7 @@ class UsersController extends \BaseController {
         $flash_message = '';
         $this->user = Auth::user();
 
-        Stripe::setApiKey($_ENV['STRIPE_SECRET']);
+        Stripe::setApiKey(getenv('STRIPE_SECRET'));
 
         // 1. Subscribed?
         $subscribed = $this->user->subscribed();
@@ -159,7 +159,7 @@ class UsersController extends \BaseController {
         {
         	case 'plan':
         	   	// Set API key
-        		Stripe::setApiKey($_ENV['STRIPE_SECRET']);
+        		Stripe::setApiKey(getenv('STRIPE_SECRET'));
         		$stripe_plan = Stripe_Plan::retrieve(Input::get('plan'));
 		        if (is_null($stripe_plan->id))
 		        {

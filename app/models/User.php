@@ -124,7 +124,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface, Billa
         {
             if( ! is_null($this->stripe_id))
             {
-                Stripe::setApiKey($_ENV['STRIPE_SECRET']);
+                Stripe::setApiKey(getenv('STRIPE_SECRET'));
                 return $this->customer = Stripe_Customer::retrieve($this->stripe_id);
             }
         }

@@ -68,7 +68,7 @@
   @yield('lightbox')
   <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
   <script>
-    Stripe.setPublishableKey('{{ $_ENV['STRIPE_PUBLIC'] }}');
+    Stripe.setPublishableKey('{{ getenv('STRIPE_PUBLIC') }}');
   </script>
   <script type="text/javascript" src="/assets/js/stripe_form.js"></script>
 </body>

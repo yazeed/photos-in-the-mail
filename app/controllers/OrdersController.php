@@ -40,7 +40,7 @@ class OrdersController extends \BaseController {
     {
 
     	// Set API key
-        Stripe::setApiKey($_ENV['STRIPE_SECRET']);
+        Stripe::setApiKey(getenv('STRIPE_SECRET'));
 
         $input = Input::all();
 

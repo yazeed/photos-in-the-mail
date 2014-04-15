@@ -21,7 +21,7 @@ class StripePlan extends Stripe_Plan {
      */
     public function __construct($id = '')
     {
-        Stripe::setApiKey($_ENV['STRIPE_SECRET']);
+        Stripe::setApiKey(getenv('STRIPE_SECRET'));
         if ( ! is_null($id))
         {
             $this->id = $id;
