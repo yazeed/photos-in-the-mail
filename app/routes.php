@@ -16,6 +16,14 @@
 Route::get('/', function()
 {
 
+    // $data = ['token' => ''];
+    // Mail::queue('emails.auth.reminder', $data, function($message)
+    // {
+    //     $message->to('mvanmeter1@gmail.com')
+    //             ->subject('Welcome to the Photos in the Mail');
+    // });
+
+
     if (Auth::check())
     {
         return Redirect::to('/users/' . Auth::user()->id);
