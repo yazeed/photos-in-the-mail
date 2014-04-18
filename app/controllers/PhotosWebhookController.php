@@ -1,4 +1,4 @@
-<?php namespace Acme\Webhooks;
+<?php
 
 use Laravel\Cashier\WebhookController;
 

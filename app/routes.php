@@ -45,7 +45,7 @@ Route::get('email', function() {
 });
 
 // Handle failed payments and cancelling subscriptions.
-Route::post('stripe/webhook', 'Laravel\Cashier\WebhookController@handleWebhook');
+Route::post('stripe/webhook', 'PhotosWebhookController@handleWebhook');
 
 
 /*
