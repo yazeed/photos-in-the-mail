@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="label-wrap">
                     <label for="cc-num">Credit Card Number:</label>
-                    <span>*required</span>
+                    <span>*</span>
                 </div>
                 <div class="input-wrap">
                     <input class="required-number" id="cc-num" type="text" data-stripe="number">
@@ -74,7 +74,7 @@
                 <div class="cvc-code">
                     <div class="label-wrap">
                         <label for="cvc">CVC Code:</label>
-                        <span>*required</span>
+                        <span>*</span>
                     </div>
                     <input class="required-number" id="cvc" type="text" data-stripe="cvc">
                     <span>It’s the 3-digit code on the back</span>
@@ -95,14 +95,14 @@
                         <div class="first-name">
                             <div class="label-wrap">
                                 <label for="f-name1">First Name:</label>
-                                <span>*required</span>
+                                <span>*</span>
                             </div>
                             <input class="required" id="f-name1" type="text" name="f-name1">
                         </div>
                         <div class="last-name">
                             <div class="label-wrap">
                                 <label for="l-name1">Last Name:</label>
-                                <span>*required</span>
+                                <span>*</span>
                             </div>
                             <input class="required" id="l-name1" type="text" name="l-name">
                         </div>
@@ -110,7 +110,7 @@
                     <div class="row">
                         <div class="label-wrap">
                             <label for="shipping-add1">Shipping Address</label>
-                            <span>*required</span>
+                            <span>*</span>
                         </div>
                         <input class="required shipping-addr" id="shipping-add1" type="text" name="shipping-add">
                     </div>
@@ -118,21 +118,21 @@
                         <div class="city">
                             <div class="label-wrap">
                                 <label for="city7">City</label>
-                                <span>*required</span>
+                                <span>*</span>
                             </div>
                             <input class="required" id="city7" type="text" name="city7">
                         </div>
                         <div class="state">
                             <div class="label-wrap">
                                 <label for="state7">State:</label>
-                                <span>*required</span>
+                                <span>*</span>
                             </div>
                             <input class="required" id="state7" type="text" name="state7">
                         </div>
                         <div class="zip">
                             <div class="label-wrap">
                                 <label for="zip7">Zip:</label>
-                                <span>*required</span>
+                                <span>*</span>
                             </div>
                             <input class="required-number" id="zip7" type="text" name="zip7">
                         </div>

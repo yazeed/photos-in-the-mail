@@ -117,9 +117,16 @@ figure {
 	font:19px/22px 'Dosis', Tahoma, Geneva, sans-serif;
 	color:#fff;
 	padding:21px 0;
-	text-transform:capitalize;
 	width:510px;
 	text-align:right;
+}
+.login-links a,
+.login-links a:hover {
+	color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 5px 10px;
+	text-decoration: none;
 }
 /* main informative part styles */
 #main{background:#fdfdfb; min-height: 100%; padding-bottom: 150px;}
@@ -191,7 +198,8 @@ figure {
 	overflow:hidden;
 	margin:0 0 12px;
 }
-.pricing .name { float: left; }
+
+.pricing .name,
 #content h2{
 	float:left;
 	margin:0;
@@ -295,7 +303,13 @@ figure {
 	display:none;
 	text-decoration:none;
 }
-.pricing .btns.hover .btn-select{text-decoration:none;}
+
+.pricing .btns.hover .btn-select,
+.pricing:hover .btn-select {
+	background: #7ba142;
+	text-decoration:none;
+}
+
 .column >.active{
 	background: #7da133 url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdkYTEzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iIzgwYTYzNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI2JSIgc3RvcC1jb2xvcj0iIzgxYTczOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI5JSIgc3RvcC1jb2xvcj0iIzgxYTczNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU2JSIgc3RvcC1jb2xvcj0iIzg5YjAzZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iIzg4YWYzYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYxJSIgc3RvcC1jb2xvcj0iIzhhYjEzZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY1JSIgc3RvcC1jb2xvcj0iIzhiYjAzYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY2JSIgc3RvcC1jb2xvcj0iIzhiYjIzZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iIzhjYjEzZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc0JSIgc3RvcC1jb2xvcj0iIzhkYjQ0MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iIzhjYjMzZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5MWI4NDMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7da133), color-stop(25%,#80a635), color-stop(26%,#81a738), color-stop(29%,#81a736), color-stop(56%,#89b03d), color-stop(59%,#88af3c), color-stop(61%,#8ab13e), color-stop(65%,#8bb03c), color-stop(66%,#8bb23f), color-stop(70%,#8cb13d), color-stop(74%,#8db441), color-stop(75%,#8cb33e), color-stop(100%,#91b843));
@@ -597,6 +611,7 @@ div.lightbox {
 .shipping-form .error input[type="text"],
 .logininfo-form .error input[type="email"], 
 .logininfo-form .error input[type="text"],
+.shipping-form .error input[type="password"],
 .logininfo-form .error input[type="password"],
 .billing-form .error input[type="text"],
 .billing-form .error .select-area,
@@ -725,7 +740,7 @@ div.lightbox {
 	list-style:none;
 	display: inline-block;
 	float: right;
-	margin: 6px 6px 0;
+	margin: 9px 9px 0;
 }
 .billing-form .input-wrap .cc-list li{
 	float:left;
@@ -842,7 +857,15 @@ input[type="submit"].small {
 	background: linear-gradient(to bottom,  #acbe82 0%,#b7c98b 100%);
 	border:none;
 }
-*+html .billing-form input[type="submit"]{width:210px !important;}
+.billing-form input[type="submit"] {
+	width: 210px;
+	float: right;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
 .button-holder {
 	position:relative;
 	width:100%;
@@ -1585,7 +1608,7 @@ input[type="submit"].small {
 	line-height:16px;
 }
 #footer {position: relative;
-    margin-top: -50px; /* negative value of footer height */
+    margin-top: 0; /* negative value of footer height */
     clear:both;}
 #footer .holder{
 	width:960px;

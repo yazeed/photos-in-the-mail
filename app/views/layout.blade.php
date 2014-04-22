@@ -27,7 +27,7 @@
 <body>
 @endif
   <!-- main container of all the page elements -->
-  <div id="wrapper" class="add">
+  <div id="wrapper">
     <!-- header of the page -->
     <header id="header">
       <div class="holder">
@@ -36,7 +36,7 @@
           <a href="/">Photos in the mail</a>
         </strong>
         <span class="company-name">
-          An Mtek Media Company &nbsp;
+          an mtek media company &nbsp;
           <span class="login-links">
               @if (! Auth::check())
                 <a href="/login">Log In</a>
@@ -65,7 +65,7 @@
   <footer id="footer">
     <div class="holder">
       <span class="copy-right">©2014 <a href="#">Photos in the Mail</a>. All Rights Reserved. </span>
-      <span class="company-name">An Mtek Media Company</span>
+      <span class="company-name">an mtek media company</span>
     </div>
   </footer>
 

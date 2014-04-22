@@ -20,16 +20,16 @@ class PhotosWebhookController extends WebhookController {
 		}
 	}
 
-	public function handleFailedPayment($payload) {
+	public function handleFailedPayment(array $payload) {
 		
-		if ($this->tooManyFailedPayments($payload)) {
+		$data = [];
+	    Mail::queue('emails.customer.failed', $data, function($message)
+	    {
+	        $message->to('mvanmeter1@gmail.com')
+	                ->subject('Failed Payment');
+	    });
 
-			$data = [];
-		    Mail::queue('emails.customer.failed', $data, function($message)
-		    {
-		        $message->to('mvanmeter1@gmail.com')
-		                ->subject('Failed Payment');
-		    });
+		if ($this->tooManyFailedPayments($payload)) {
 
 		}
 

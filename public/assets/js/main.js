@@ -36,7 +36,7 @@ function initCheckFormFill(){
 	//disable submit if form is not filled
 	function checkForm(form) {
 		var flag;
-		form.find('input').not(':checkbox, :radio, :submit').each(function(){
+		form.find('input').not(':checkbox, :radio, :submit, :hidden').each(function(){
 			if(jQuery(this).val().length) flag = true;
 		});
 		if(!flag) form.removeClass('filled-success');
@@ -94,7 +94,7 @@ function initTariffOrdering(){
 				jQuery.fancybox({
 					padding: 10,
 					margin: 0,
-					href: shippingSubmit.attr('href'),
+					href: shippingSubmit.attr('data-href'),
 					cyclic: false,
 					autoScale: true,
 					overlayShow: true,
@@ -132,9 +132,8 @@ function initValidation(){
 	var form = jQuery('.logininfo-form').attr('novalidate', 'novalidate');
 	form.submit(function(e){
 		if(!validate(form.find('input, textarea, select'))) {
-				e.preventDefault();
-			}
-		;
+			e.preventDefault();			
+		}
 	});
 }
 
@@ -144,6 +143,7 @@ function validate(inputs){
 	var regEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 	var regPhone = /^[0-9]+$/;
 	var successFlag = true;
+	var regPass = /^[a-zA-Z]\w{3,14}$/
 	
 	inputs.each(checkField);
 	
@@ -177,6 +177,11 @@ function validate(inputs){
 		// not empty fields with confirmation
 		if(currentObject.hasClass('required-verify')) {
 			setState(currentParent, currentObject, !currentObject.val().length || currentObject.val() === currentObject.prop('defaultValue') || (currentObject.val() !== jQuery(currentObject.data('verify')).val()));
+		}
+
+		// not empty fields with confirmation
+		if(currentObject.hasClass('required-password')) {
+			setState(currentParent, currentObject, !regPass.test(currentObject.val()));
 		}
 	}
 	

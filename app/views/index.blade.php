@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+<section id="content">
     <div class="c1">
             <div class="c3">
                 <div class="c2">
@@ -78,8 +79,8 @@
                                                 <a href="#" class="secure">Secure</a>
                                             </li>
                                             <li class="upload-photo">
-                                                <strong class="title">Upload Your Photos</strong>
-                                                <p>Use our easy upload tool to add your photos each month.</p>
+                                                <strong class="title">Email Your Photos</strong>
+                                                <p>Simply send your photos to <a href="mailto:photos@photosinthemail.com">this email</a> each month.</p>
                                                 <span class="bg-wrap"></span>
                                             </li>
                                             <li class="even photo-mail">
@@ -162,8 +163,8 @@
                                                 <a href="#" class="secure">Secure</a>
                                             </li>
                                             <li class="upload-photo">
-                                                <strong class="title">Upload Your Photos</strong>
-                                                <p>Use our easy upload tool to add your photos each month.</p>
+                                                <strong class="title">Email Your Photos</strong>
+                                                <p>Simply send your photos to <a href="mailto:photos@photosinthemail.com">this email</a> each month.</p>
                                                 <span class="bg-wrap"></span>
                                             </li>
                                             <li class="even photo-mail">
@@ -247,8 +248,8 @@
                                                 <a href="#" class="secure">Secure</a>
                                             </li>
                                             <li class="upload-photo">
-                                                <strong class="title">Upload Your Photos</strong>
-                                                <p>Use our easy upload tool to add your photos each month.</p>
+                                                <strong class="title">Email Your Photos</strong>
+                                                <p>Simply send your photos to <a href="mailto:photos@photosinthemail.com">this email</a> each month.</p>
                                                 <span class="bg-wrap"></span>
                                             </li>
                                             <li class="even photo-mail">
@@ -303,9 +304,10 @@
                 </ul>
             </div>
         </div>
+    </section>
 @stop
 
 @section('lightbox')
     @include('forms.lightbox')
-    @include('modal.tos');
+    @include('modal.tos')
 @stop

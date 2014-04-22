@@ -4,20 +4,20 @@
 		<div class="left-content">
 			<h2>Enter Shipping Info</h2>
 			<!-- shipping-from -->
-			{{ Form::open(['class' => 'shipping-form filled-success']) }}
+			{{ Form::open(['class' => 'shipping-form']) }}
 				<fieldset>
 					<div class="row">
 						<div class="first-name">
 							<div class="label-wrap">
 								<label for="first-name">First Name:</label>
-								<span>*required</span>
+								<span>*</span>
 							</div>
 							<input class="required" id="first-name" type="text" name="f-name">
 						</div>
 						<div class="last-name">
 							<div class="label-wrap">
 								<label for="last-name">Last Name:</label>
-								<span>*required</span>
+								<span>*</span>
 							</div>
 							<input class="required" id="last-name" type="text" name="l-name">
 						</div>
@@ -27,22 +27,22 @@
 						<div class="email-address">
 							<div class="label-wrap">
 								<label for="email-id">Email Address:</label>
-								<span>*required</span>
+								<span>*</span>
 							</div>
 							<input class="required-email" id="email-id" type="email" name="stripeEmail">
 						</div>
 		                <div class="password">
 		                    <div class="label-wrap">
 		                        <label for="password">Choose a password:</label>
-		                        <span>*required</span>
+		                        <span>*</span>
 		                    </div>
-		                    <input type="password" name="password">
+		                    <input class="required-password" type="password" name="password">
 		                </div>
 					</div>
 					<div class="row">
 						<div class="label-wrap">
 							<label for="shipping-address">Shipping Address:</label>
-							<span>*required</span>
+							<span>*</span>
 						</div>
 						<input class="shipping-addr required" id="shipping-address" type="text" name="address_line1">
 					</div>
@@ -50,27 +50,27 @@
 						<div class="city">
 							<div class="label-wrap">
 								<label for="city">City:</label>
-								<span>*required</span>
+								<span>*</span>
 							</div>
 							<input class="required" id="city" type="text" name="address_city">
 						</div>
 						<div class="state">
 							<div class="label-wrap">
 								<label for="state">State:</label>
-								<span>*required</span>
+								<span>*</span>
 							</div>
 							<input class="required" id="state" type="text" name="address_state">
 						</div>
 						<div class="zip">
 							<div class="label-wrap">
 								<label for="zip">Zip:</label>
-								<span>*required</span>
+								<span>*</span>
 							</div>
 							<input class="required-number" id="zip" type="text" name="address_zip">
 						</div>
 					</div>
 					<div class="button-holder">
-						<a href="#popup7" class="continue lightbox">continue &gt;</a>
+						<a href="javascript:void(0);" data-href="#popup7" class="continue lightbox">Continue &gt;</a>
 						<span class="mask"></span>
 					</div>
 				</fieldset>
@@ -87,7 +87,7 @@
 								<div class="row">
 									<div class="label-wrap">
 										<label for="cc-num">Credit Card Number:</label>
-										<span>*required</span>
+										<span>*</span>
 									</div>
 									<div class="input-wrap">
 										<input class="required-number" id="cc-num" type="text" data-stripe="number">
@@ -153,7 +153,7 @@
 									<div class="cvc-code">
 										<div class="label-wrap">
 											<label for="cvc">CVC Code:</label>
-											<span>*required</span>
+											<span>*</span>
 										</div>
 										<input class="required-number" id="cvc" type="text" data-stripe="cvc">
 										<span>It’s the 3-digit code on the back</span>
@@ -173,14 +173,14 @@
 											<div class="first-name">
 												<div class="label-wrap">
 													<label for="f-name1">First Name:</label>
-													<span>*required</span>
+													<span>*</span>
 												</div>
 												<input class="required" id="f-name1" type="text" name="f-name1">
 											</div>
 											<div class="last-name">
 												<div class="label-wrap">
 													<label for="l-name1">Last Name:</label>
-													<span>*required</span>
+													<span>*</span>
 												</div>
 												<input class="required" id="l-name1" type="text" name="l-name1">
 											</div>
@@ -189,7 +189,7 @@
 										<div class="row">
 											<div class="label-wrap">
 												<label for="shipping-add1">Street Address</label>
-												<span>*required</span>
+												<span>*</span>
 											</div>
 											<input class="required shipping-addr" id="shipping-add1" type="text" name="stripeBillingAddressLine1">
 										</div>
@@ -197,21 +197,21 @@
 											<div class="city">
 												<div class="label-wrap">
 													<label for="city7">City</label>
-													<span>*required</span>
+													<span>*</span>
 												</div>
 												<input class="required" id="city7" type="text" name="stripeBillingAddressCity">
 											</div>
 											<div class="state">
 												<div class="label-wrap">
 													<label for="state7">State:</label>
-													<span>*required</span>
+													<span>*</span>
 												</div>
 												<input class="required" id="state7" type="text" name="stripeBillingAddressState">
 											</div>
 											<div class="zip">
 												<div class="label-wrap">
 													<label for="zip7">Zip:</label>
-													<span>*required</span>
+													<span>*</span>
 												</div>
 												<input class="required-number" id="zip7" type="text" name="stripeBillingAddressZip">
 											</div>
@@ -231,7 +231,7 @@
 					</div>
 					<aside class="right-content">
 						<div class="you-selected">
-							<strong class="title">You selected:<span><span class="name-text">Album</span>(<sup>$</sup><span class="price-text">9</span>/mo.)</span></strong>
+							<strong class="title">You selected: <span><span class="name-text">Album</span>(<sup>$</sup><span class="price-text">9</span>/mo.)</span></strong>
 							<div class="photos-num">
 								<div class="img-wrap">
 									<img src="/assets/images/icon01.png" width="73" height="45" alt="icon">
@@ -253,7 +253,7 @@
 		<!-- lightbox sidebar -->
 		<aside class="right-content">
 			<div class="you-selected">
-				<strong class="title">You selected:<span><span class="name-text">Album</span>(<sup>$</sup><span class="price-text">9</span>/mo.)</span></strong>
+				<strong class="title">You selected: <span><span class="name-text">Album</span>(<sup>$</sup><span class="price-text">9</span>/mo.)</span></strong>
 				<div class="photos-num">
 					<div class="img-wrap">
 						<img src="/assets/images/icon01.png" width="73" height="45" alt="icon">

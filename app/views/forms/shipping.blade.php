@@ -1,19 +1,19 @@
 <div class="form-wrapper shipping-form-wrapper">
     <h2>Enter Shipping Info</h2>
-    {{ Form::open(['class' => 'shipping-form filled-success']) }}
+    {{ Form::open(['class' => 'shipping-form']) }}
         <fieldset>
             <div class="row">
                 <div class="first-name">
                     <div class="label-wrap">
                         <label for="first-name">First Name:</label>
-                        <span>*required</span>
+                        <span>*</span>
                     </div>
                     <input class="required" id="first-name" type="text" name="f-name">
                 </div>
                 <div class="last-name">
                     <div class="label-wrap">
                         <label for="last-name">Last Name:</label>
-                        <span>*required</span>
+                        <span>*</span>
                     </div>
                     <input class="required" id="last-name" type="text" name="l-name">
                 </div>
@@ -22,22 +22,22 @@
                 <div class="email-address">
                     <div class="label-wrap">
                         <label for="email-id">Email Address:</label>
-                        <span>*required</span>
+                        <span>*</span>
                     </div>
                     <input class="required-email" id="email-id" type="email" name="email">
                 </div>
                 <div class="password">
                     <div class="label-wrap">
                         <label for="password">Choose a password:</label>
-                        <span>*required</span>
+                        <span>*</span>
                     </div>
-                    <input type="password" name="password">
+                    <input class="required-password" type="password" name="password">
                 </div>
             </div>
             <div class="row">
                 <div class="label-wrap">
                     <label for="shipping-address">Shipping Address:</label>
-                    <span>*required</span>
+                    <span>*</span>
                 </div>
                 <input class="shipping-addr required" id="shipping-address" type="text" name="s-address">
             </div>
@@ -45,21 +45,21 @@
                 <div class="city">
                     <div class="label-wrap">
                         <label for="city">City:</label>
-                        <span>*required</span>
+                        <span>*</span>
                     </div>
                     <input class="required" id="city" type="text" name="city">
                 </div>
                 <div class="state">
                     <div class="label-wrap">
                         <label for="state">State:</label>
-                        <span>*required</span>
+                        <span>*</span>
                     </div>
                     <input class="required" id="state" type="text" name="state">
                 </div>
                 <div class="zip">
                     <div class="label-wrap">
                         <label for="zip">Zip:</label>
-                        <span>*required</span>
+                        <span>*</span>
                     </div>
                     <input class="required-number" id="zip" type="text" name="zip">
                 </div>
