@@ -90,3 +90,12 @@ Route::controller('password', 'RemindersController');
 |---------------------------------------------
 */
 Route::resource('orders', 'OrdersController');
+
+/*
+|---------------------------------------------
+| Legal
+|---------------------------------------------
+*/
+Route::get('legal', function() {
+    return View::make('legal');
+});

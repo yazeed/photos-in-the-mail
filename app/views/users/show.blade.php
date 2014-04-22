@@ -64,7 +64,7 @@
                                                 <input name="update" type="hidden" value="plan" />
                                                 <input type="hidden" name="_method" value="PUT" />
                                                 <div class="terms">
-                                                    <p>By clicking "Update", you confirm that you accept the <a href="#terms-of-service" class="fancybox">Terms of Service</a> and that your plan will automatically renew monthly  and your credit card will automatically be charged the applicable monthly subscription fee and shipping and handling fees until you cancel.</p>
+                                                    <p>By clicking "Update", you confirm that you accept the <a href="/legal">Terms of Service</a> and that your plan will automatically renew monthly  and your credit card will automatically be charged the applicable monthly subscription fee and shipping and handling fees until you cancel.</p>
                                                 </div>
                                             {{ Form::close() }}
                                         @endif
@@ -214,7 +214,7 @@
                                             <input name="update" type="hidden" value="billing">
                                             <input type="hidden" name="_method" value="PUT" />
                                             <div class="terms">
-                                                <p>By clicking “Complete Order,” you confirm that you accept the <a href="#terms-of-service" class="fancybox">Terms of Service</a> and that your plan will automatically renew monthly  and your credit card will automatically be charged the applicable monthly subscription fee and shipping and handling fees until you cancel.</p>
+                                                <p>By clicking “Complete Order,” you confirm that you accept the <a href="/legal">Terms of Service</a> and that your plan will automatically renew monthly  and your credit card will automatically be charged the applicable monthly subscription fee and shipping and handling fees until you cancel.</p>
                                             </div>
                                         {{ Form::close() }}
                                     </div>
@@ -285,7 +285,7 @@
                                             <input name="update" type="hidden" value="shipping">
                                             <input type="hidden" name="_method" value="PUT" />
                                             <div class="terms">
-                                                <p>By clicking “Save”, you confirm that you accept the <a href="#terms-of-service" class="fancybox">Terms of Service</a> and that your plan will automatically renew monthly  and your credit card will automatically be charged the applicable monthly subscription fee and shipping and handling fees until you cancel.</p>
+                                                <p>By clicking “Save”, you confirm that you accept the <a href="/legal">Terms of Service</a> and that your plan will automatically renew monthly  and your credit card will automatically be charged the applicable monthly subscription fee and shipping and handling fees until you cancel.</p>
                                             </div>
                                         {{ Form::close() }}
                                     </div>
@@ -396,8 +396,4 @@
             </aside>
         </div>
     </div>
-@stop
-
-@section('lightbox')
-    @include('modal.tos')
 @stop

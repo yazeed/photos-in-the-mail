@@ -209,3 +209,8 @@ input[type="password"] {
 #content .my-plan h2 {
   float: none;
 }
+
+form.cancel-plan input[type=submit] {
+  float: none;
+  margin: 0;
+}

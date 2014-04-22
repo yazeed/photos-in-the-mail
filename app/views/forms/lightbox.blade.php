@@ -226,7 +226,7 @@
 							<input type="hidden" name="plan">
 						{{ Form::close() }}
 						<div class="terms">
-							<p>By clicking “Complete Order,” you confirm that you accept the <a href="#">Terms of Service</a> and that your plan will automatically renew monthly  and your credit card will automatically be charged the applicable monthly subscription fee and shipping and handling fees until you cancel.</p>
+							<p>By clicking “Complete Order,” you confirm that you accept the <a href="legal" target="_blank">Terms of Service</a> and that your plan will automatically renew monthly  and your credit card will automatically be charged the applicable monthly subscription fee and shipping and handling fees until you cancel.</p>
 						</div>
 					</div>
 					<aside class="right-content">

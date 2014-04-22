@@ -309,5 +309,4 @@
 
 @section('lightbox')
     @include('forms.lightbox')
-    @include('modal.tos')
 @stop

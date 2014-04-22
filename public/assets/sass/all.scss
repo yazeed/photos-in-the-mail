@@ -1300,6 +1300,11 @@ input[type="submit"].small {
 	background:url(../images/separator01.png) repeat-y 100% 0;
 	margin-bottom:58px;
 }
+#two-columns > #content {
+	float: left;
+	width: 620px;
+}
+
 .open-close.active .login-top{
   margin-bottom:0;
   padding-bottom: 0;
@@ -1562,7 +1567,7 @@ input[type="submit"].small {
 .cc-holder li a{float:left;}
 .cc-holder li img{vertical-align:top;}
 /* sidebar style */
-.add #sidebar{
+#sidebar{
 	float:left;
 	padding:24px 0 0;
 	width:300px;
@@ -1628,15 +1633,6 @@ input[type="submit"].small {
   background: #B7C98B;
   font-weight: bold;
   color: #A22828;
-}
-
-#terms-of-service {
-	display: none;
-	padding: 20px 40px 40px;
-}
-
-#fancybox-wrap #terms-of-service {
-	display: block;
 }
 
 #fancybox-wrap {
