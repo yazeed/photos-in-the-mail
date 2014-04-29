@@ -1,6 +1,12 @@
 <div class="form-wrapper billing-form-wrapper">
     <h2>Enter Billing Info</h2>
-    {{ Form::open(['route' => 'orders.store', 'method' => 'post', 'class' => 'billing-form']) }}
+    @if (isset($resume) && $resume)
+        {{ Form::open(['class' => 'billing-form']) }}
+        <input type="hidden" name="plan" value="{{ $plan->id }}" />
+    @else
+        {{ Form::open(['route' => 'orders.store', 'method' => 'post', 'class' => 'billing-form']) }}
+        <input type="hidden" name="plan" value="" />
+    @endif
         <div class="payment-errors"></div>
         <fieldset>
             <div class="row">
@@ -147,6 +153,5 @@
         <div class="terms">
             <p>By clicking “Complete Order,” you confirm that you accept the <a href="#">Terms of Service</a> and that your plan will automatically renew monthly  and your credit card will automatically be charged the applicable monthly subscription fee and shipping and handling fees until you cancel.</p>
         </div>
-        <input type="hidden" name="plan" value="" />
     {{ Form::close() }}
 </div>

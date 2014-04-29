@@ -47,7 +47,7 @@ function initCheckFormFill(){
 function initTariffOrdering(){
 	var columns = jQuery('.three-columns .column > .pricing:has(.btn-plan.lightbox)');
 	
-	if(columns.length) {
+	if(columns.length || $('.holder.resume').length) {
 		columns.each(function(){
 			var holder = jQuery(this);
 			var btn = holder.find('.btn-plan.lightbox');

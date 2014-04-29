@@ -214,3 +214,37 @@ form.cancel-plan input[type=submit] {
   float: none;
   margin: 0;
 }
+
+.holder.resume .billing-form-wrapper {
+  float: left;
+  width: 500px;
+}
+
+.holder.resume .billing-form-wrapper input[type=submit] {
+  float: none;
+  margin: 0;
+}
+
+.holder.resume .right-content {
+  float:right;
+  width: 400px;
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+}
+
+.holder.resume .right-content .secure-checkout a {
+  float: none;
+}
+
+.holder.resume .you-selected {
+  min-height: 0;
+}
+
+.holder.resume .title > span {
+  font: 24px/26px 'lunchboxregular', Tahoma, Geneva, sans-serif;
+  color: #545046;
+}
+
+.holder.resume .right-content .secure-checkout h3 {
+  font-size: 20px;
+}

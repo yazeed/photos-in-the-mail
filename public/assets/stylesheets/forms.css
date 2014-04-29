@@ -216,3 +216,15 @@ input[type="password"] {
 #content .my-plan h2 {
   float: none;
 }
+
+/* line 213, ../sass/forms.scss */
+form.cancel-plan input[type=submit] {
+  float: none;
+  margin: 0;
+}
+
+/* line 218, ../sass/forms.scss */
+.holder.resume .billing-form-wrapper {
+  float: left;
+  width: 500px;
+}

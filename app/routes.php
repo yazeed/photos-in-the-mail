@@ -58,6 +58,11 @@ Route::get('login', 'SessionsController@create');
 Route::get('logout', 'SessionsController@destroy');
 Route::resource('users', 'UsersController');
 
+/*
+|---------------------------------------------
+| Subscriptions
+|---------------------------------------------
+*/
 Route::get('unsubscribe', function()
 {
     if (Auth::check())
@@ -75,6 +80,41 @@ Route::get('/unsubscribe/authorize', function() {
     	return Redirect::to('/users/' . $user->id);
     }
 	return Response::view('errors.missing', array(), 404);
+});
+
+Route::get('resume', function()
+{
+    if (Auth::check())
+    {
+        $user = Auth::user();
+        if ($user->cancelled()) {
+            Stripe::setApiKey(getenv('STRIPE_SECRET'));
+            $plan = Stripe_Plan::retrieve($user->stripe_plan);
+            return View::make('users.resume', ['user' => $user, 'plan' => $plan]);
+        } else {
+            return Redirect::to('/users/' . $user->id);
+        }
+    }
+    return Response::view('errors.missing', array(), 404);
+});
+
+Route::post('resume', function()
+{
+    if (Auth::check())
+    {
+        $input = Input::all();
+        if (!empty($input['stripeToken']))
+        {
+            $user = Auth::user();
+            if ($user->cancelled()) {
+                $user->subscription($input['plan'])->resume($input['stripeToken']);
+                return Redirect::to('/users/' . $user->id)->withFlashMessage('You have been resubscribed!');
+            } else {
+                return Redirect::to('/users/' . $user->id);
+            }
+        }
+    }
+    return Response::view('errors.missing', array(), 404);
 });
 
 /*

@@ -92,11 +92,10 @@ class UsersController extends \BaseController {
 	    }
 
         // 2. Cancelled subscription?
-        $cancelled = $this->user->cancelled();
+        $vars['cancelled'] = $this->user->cancelled();
 
-        if($cancelled)
+        if($vars['cancelled'])
         {
-        	$vars['cancelled'] = true;
         	$now = Carbon::now();
         	$ends_date = $this->user->subscription_ends_at;
         	if($now->lt($ends_date))
