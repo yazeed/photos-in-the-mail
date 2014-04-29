@@ -72,7 +72,6 @@ class PhotosWebhookController extends WebhookController {
 		
 		$data = $payload['data']['object'];
 		$customer_id = $data['customer'];
-		$customer_id = 'cus_3wIPyUmFubvioB';
 		$user = User::where('stripe_id', '=', $customer_id)->firstOrFail();
 		$date = Carbon::createFromTimeStamp($data['date'])->format('n/j/y');
 		$amount = number_format(((int) $data['lines']['data'][0]['amount']) / 100, 2, '.', '');
