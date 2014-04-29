@@ -31,6 +31,15 @@
 							</div>
 							<input class="required-email" id="email-id" type="email" name="stripeEmail">
 						</div>
+						<div class="varify-email">
+							<div class="label-wrap">
+								<label for="email-id">Verify Email Address:</label>
+								<span>*</span>
+							</div>
+							<input data-verify="#email-id" class="required-verify-email" id="verify-id" type="email" name="verify-id">
+						</div>
+					</div>
+					<div class="row" style="padding-bottom: 20px; border-bottom: 1px solid #ccc;">
 		                <div class="password">
 		                    <div class="label-wrap">
 		                        <label for="password">Choose a password:</label>
