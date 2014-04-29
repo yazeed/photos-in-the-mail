@@ -4,7 +4,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Photos in the Mail Email Communications</title>
-    <style type="text/css">
+    <style>
+
         body{
             margin:0;
             padding:0;
@@ -36,17 +37,12 @@
             padding:0;
             width:100% !important;
         }
-    </style>
 
-	<style type="text/css">
-    @media only screen and (min-device-width: 541px) {
-      .content {
-        width: 540px !important;
-      }
-    }
-	a { color: #80A536; }
-	* { font-family: sans-serif; }
-	body { padding: 50px 0; }
+      a { color: #80A536; }
+      * { font-family: sans-serif; }
+      body { padding: 50px 0; }
+      h1 { text-align: center; }
+      p {  }
 
   </style>
 
@@ -60,16 +56,17 @@
       <td>
 <![endif]-->
  
-        <table class="content" align="center" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 540px;">
+        <table class="content" align="center" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td>
-      				<div style="background: #545046 url(//ec2-54-198-102-196.compute-1.amazonaws.com/assets/images/bg-header.png) repeat-x 50% 0; text-align: center;padding: 35px 0">
-      					<a href="/"><img src="http://ec2-54-198-102-196.compute-1.amazonaws.com/assets/images/logo.png" width="370" height="63" alt="Photos in the Mail Logo" /></a>
-      				</div>
-      				<div style="border: 1px solid #545046; padding: 15px">
-
-              @yield('content')
-
+            <td align="center">
+              <div style="width:540px;max-width: 600px">
+        				<div style="background: #545046 url(//ec2-54-198-102-196.compute-1.amazonaws.com/assets/images/bg-header.png) repeat-x 50% 0; text-align: center;padding: 35px 0">
+        					<a href="/"><img src="http://ec2-54-198-102-196.compute-1.amazonaws.com/assets/images/logo.png" width="370" height="63" alt="Photos in the Mail Logo" /></a>
+        				</div>
+        				<div style="font-size: 14px; line-height: 1.5em; border: 1px solid #545046; padding: 15px; text-align: left;">
+                  @yield('content')
+                </div>
+              </div>
             </td>
           </tr>
         </table>

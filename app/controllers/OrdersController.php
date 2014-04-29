@@ -80,6 +80,7 @@ class OrdersController extends \BaseController {
 
         // Set go to print date.
         $user->go_to_print = Carbon::now();
+        $user->delivery_date = $user->go_to_print->addDays(12);
         $user->save();
 
         // Update the customer information at Stripe.

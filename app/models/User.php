@@ -9,7 +9,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface, Billa
 
     use BillableTrait;
 
-    protected $dates = array('created_at', 'updated_at', 'trial_ends_at', 'subscription_ends_at', 'go_to_print');
+    protected $dates = array('created_at', 'updated_at', 'trial_ends_at', 'subscription_ends_at', 'go_to_print', 'delivery_date');
 
 	/**
 	 * The database table used by the model.
@@ -30,7 +30,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface, Billa
      *
      * @var array
      */
-    public $fillable = ['email', 'password', 'go_to_print'];
+    public $fillable = ['email', 'password', 'go_to_print', 'delivery_date'];
     public static $rules = [
         'email' => 'required',
         'password' => 'required|alpha_num|between:6,20|',
@@ -202,9 +202,19 @@ class User extends Eloquent implements UserInterface, RemindableInterface, Billa
     {
         if(is_null($this->go_to_print))
         {
-            return '00th';
+            return '0th';
         }
         return $this->go_to_print->format('jS');
+    }
+
+    // Formatted print date for profile page
+    public function getDeliveryDate()
+    {
+        if(is_null($this->delivery_date))
+        {
+            return '0th';
+        }
+        return $this->delivery_date->format('jS');
     }
 
 }
