@@ -66,7 +66,7 @@
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <strong class="price">$7<span>/mo</span></strong>
+                                                        <strong class="price">$8<span>/mo</span></strong>
                                                         <div class="photo-no">
                                                             <span>x25</span>
                                                         </div>
@@ -99,7 +99,7 @@
                                     <header class="heading">
                                         <h2 class="name">Collection</h2>
                                         <span class="monthly-rate">
-                                            <sub>Monthly</sub><sup>$</sup><span class="num">6</span>
+                                            <sub>Monthly</sub><sup>$</sup><span class="num">5</span>
                                         </span>
                                     </header>
                                     <div class="text-wrapper">
@@ -150,7 +150,7 @@
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <strong class="price">$7<span>/mo</span></strong>
+                                                        <strong class="price">$8<span>/mo</span></strong>
                                                         <div class="photo-no">
                                                             <span>x25</span>
                                                         </div>
@@ -183,7 +183,7 @@
                                     <header class="heading">
                                         <h2 class="name">Album</h2>
                                         <span class="monthly-rate">
-                                            <sub>Monthly</sub><sup>$</sup><span class="num">9</span>
+                                            <sub>Monthly</sub><sup>$</sup><span class="num">8</span>
                                         </span>
                                     </header>
                                         <div class="text-wrapper">
@@ -235,7 +235,7 @@
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <strong class="price">$7<span>/mo</span></strong>
+                                                        <strong class="price">$8<span>/mo</span></strong>
                                                         <div class="photo-no">
                                                             <span>x25</span>
                                                         </div>

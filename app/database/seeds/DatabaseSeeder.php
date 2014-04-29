@@ -45,7 +45,7 @@ class PlansTableSeeder extends Seeder {
         $plan2 = [
             'id' => 'collection',
             'name' => 'Collection',
-            'amount' => 600,
+            'amount' => 500,
             'interval' => 'month',
             'currency' => 'usd',
             'metadata' => ['prints_per_month' => 15]
@@ -53,7 +53,7 @@ class PlansTableSeeder extends Seeder {
         $plan3 = [
             'id' => 'album',
             'name' => 'Album',
-            'amount' => 900,
+            'amount' => 800,
             'interval' => 'month',
             'currency' => 'usd',
             'metadata' => ['prints_per_month' => 25]

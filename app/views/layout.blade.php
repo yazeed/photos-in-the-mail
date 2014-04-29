@@ -64,7 +64,7 @@
   <!-- footer of the page -->
   <footer id="footer">
     <div class="holder">
-      <span class="copy-right">©{{ date("Y") }} <a href="#">Photos in the Mail</a>. All Rights Reserved. </span>
+      <span class="copy-right">©{{ date("Y") }} <a href="#">Photos in the Mail</a>. All Rights Reserved. &nbsp;<a href="/legal#privacy" style="text-decoration:underline">Privacy Policy</a></span>
       <span class="company-name">an mtek media company</span>
     </div>
   </footer>
