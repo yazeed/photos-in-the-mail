@@ -33,7 +33,6 @@ class PlansTableSeeder extends Seeder {
 
     public function run()
     {
-        DB::table('plans')->delete();
         $plan1 = [
             'id' => 'package',
             'name' => 'Package',
