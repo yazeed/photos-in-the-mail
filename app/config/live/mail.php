@@ -2,12 +2,14 @@
 
 return [
 	
+
 	'host' => 'smtp.mandrillapp.com',
 
-	'username' => 'bmahaffey@xceleratemedia.com',
+	'username' => getenv('MAIL_USERNAME'),
 
-	'password' => 'G82EToHo5HKqxEyDF9-rYg',
+	'password' => getenv('MAIL_PASSWORD'),
 
-	'from' => array('address' => "noreply@photos-in-the-mail.com", 'name' => 'Photos in the Mail'),
+    'from' => array('address' => getenv('MAIL_FROM_ADDRESS'), 'name' => getenv('MAIL_FROM_NAME')),
+
 
 ];
