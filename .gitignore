@@ -5,6 +5,7 @@ composer.lock
 .env.local.php
 .env.php
 .env.testing.php
+.env.live.php
 .DS_Store
 Thumbs.db
 
