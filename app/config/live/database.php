@@ -5,9 +5,9 @@ return [
 		'mysql' => [
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'DBPhoTos',
-			'username'  => 'dbUpHoTo',
-			'password'  => '-pQYwBOxX!',
+			'database'  => getenv('DB_NAME'),
+			'username'  => getenv('DB_USER'),
+			'password'  => getenv('DB_PASSWORD'),
 		],
 	]
 ];
