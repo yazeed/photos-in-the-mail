@@ -85,7 +85,7 @@
                                             </li>
                                             <li class="even photo-mail">
                                                 <strong class="title">Photos in the Mail</strong>
-                                                <p>You’ll recieve your photos within 10 days!</p>
+                                                <p>You'll receive your photos around the anniversary DAY of your sign-up day.</p>
                                                 <span class="bg-wrap"></span>
                                             </li>
                                         </ol>
@@ -103,7 +103,7 @@
                                         </span>
                                     </header>
                                     <div class="text-wrapper">
-                                        <p>For six dollars a month, we'll send you <strong>15 photos in the mail,</strong> so you can keep every moment that matters</p>
+                                        <p>For five dollars a month, we'll send you <strong>15 photos in the mail,</strong> so you can keep every moment that matters</p>
                                     </div>
                                     <div class="photos-num">
                                         <div class="img-wrap">
@@ -169,7 +169,7 @@
                                             </li>
                                             <li class="even photo-mail">
                                                 <strong class="title">Photos in the Mail</strong>
-                                                <p>You’ll recieve your photos within 10 days!</p>
+                                                <p>You'll receive your photos around the anniversary DAY of your sign-up day.</p>
                                                 <span class="bg-wrap"></span>
                                             </li>
                                         </ol>
@@ -187,7 +187,7 @@
                                         </span>
                                     </header>
                                         <div class="text-wrapper">
-                                            <p>For nine dollars a month, we'll send you <strong>25 real photos in the mail</strong>, enough to share with all your friends (&amp; your granny).</p>
+                                            <p>For eight dollars a month, we'll send you <strong>25 real photos in the mail</strong>, enough to share with all your friends (&amp; your granny).</p>
                                         </div>
                                     <div class="photos-num">
                                         <div class="img-wrap">
@@ -254,7 +254,7 @@
                                             </li>
                                             <li class="even photo-mail">
                                                 <strong class="title">Photos in the Mail</strong>
-                                                <p>You’ll recieve your photos within 10 days!</p>
+                                                <p>You'll receive your photos around the anniversary DAY of your sign-up day.</p>
                                                 <span class="bg-wrap"></span>
                                             </li>
                                         </ol>
@@ -271,22 +271,29 @@
         <div class="holder add">
             <section class="faq-block">
                 <h2>Frequently Asked Questions</h2>
-                <article class="article">
+<!--                 <article class="article">
                     <h3>What is the cancellation policy?</h3>
                     <p>Our cancellation policy is simple: No commitment, cancel at any time. You sign no contracts—simply text us that you wish to cancel, and we'll do it.</p>
-                </article>
+                </article> -->
                 <article class="article">
                     <h3>How do I order my photos each month?</h3>
-                    <p>Just text us your photos at 614-555-1234 and we'll take it from there. We need to receive your order by the end of the month—any orders that come in on the 3rd of the month, for example, will be fulfilled at the end of that month.</p>
+                    <p>Just email your photos to <a href="mailto:photos@photosinthemail.com">photos@photosinthemail.com</a> and we'll take it from there.</p>
                 </article>
-                <article class="article">
+<!--                 <article class="article">
                     <h3>Are different photo sizes offered?</h3>
                     <p>At this time, we only offer photos in the 6'x4' size. If we offer new sizes in the future, we'll let you know.</p>
-                </article>
+                </article> -->
                 <article class="article">
                     <h3>When do I get my photos?</h3>
-                    <p>We send out photos at the start of each month, so you'll receive them in your mail around the 5th. Remember, you'll need to text us your photos by the end of the month so we can do this. </p>
-                    <p>Don’t see the answer to your question? Contact us using <a href="#">this form</a>.</p>
+                    <p>About 10 days AFTER your anniversary day.   If you signed up on the 3rd of the month, then the 3rd will be your anniversary day.  You will receive your photos about 10 days AFTER your anniversary day each month as we need time to print your photos and mail them.  This means your monthly deadline to send us your photos is your anniversary day.</p>
+                </article>
+                <article class="article">
+                    <h3>How do I change my monthly subscription package or my billing information?</h3>
+                    <p><a href="/login">Log in</a> and select Update Package, Update Billing, or Update Shipping in your account page.</p>
+                </article>
+                <article class="article">
+                    <h3>Don't see an ansswer to your question?</h3>
+                    <p>Contact us by sending and email to <a href="mailto:photos@photosinthemail.com">photos@photosinthemail.com</a>.</p>
                 </article>
             </section>
             <div class="mail-block">

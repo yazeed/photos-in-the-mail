@@ -129,4 +129,9 @@
 
     $('.fancybox').fancybox({ showCloseButton: true });
 
+    $('.go-back').click(function(e) {
+        $.fancybox.close();
+        e.preventDefault();
+    });
+
 })(jQuery);
