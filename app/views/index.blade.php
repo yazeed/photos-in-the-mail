@@ -292,7 +292,7 @@
                     <p><a href="/login">Log in</a> and select Update Package, Update Billing, or Update Shipping in your account page.</p>
                 </article>
                 <article class="article">
-                    <h3>Don't see an ansswer to your question?</h3>
+                    <h3>Don't see an answer to your question?</h3>
                     <p>Contact us by sending and email to <a href="mailto:photos@photosinthemail.com">photos@photosinthemail.com</a>.</p>
                 </article>
             </section>
