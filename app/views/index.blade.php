@@ -303,10 +303,16 @@
                 </div>
                 <ul class="cc-holder">
                     <li>
+                        <a href="#"><img src="/assets/images/visa.jpg" width="52" height="34" alt="visa-card"></a>
+                    </li>
+                    <li>
                         <a href="#"><img src="/assets/images/master-card.jpg" width="54" height="34" alt="master-card"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="/assets/images/visa.jpg" width="52" height="34" alt="visa-card"></a>
+                        <a href="#"><img src="/assets/images/discover.jpg" width="52" height="34" alt="visa-card"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/assets/images/amex.jpg" width="52" height="34" alt="visa-card"></a>
                     </li>
                 </ul>
             </div>
