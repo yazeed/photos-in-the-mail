@@ -11,7 +11,9 @@
 
 	<p>Here are some other things you may want to know:</p>
 
-	<p>*You can change your plan, mailing address, or billing information anytime at <a href="mailto:photosinthemail.com">photosinthemail.com</a>.</p>
+	<p>Send your pictures using the same email you signed up with.</p>
+
+	<p>You can change your plan, mailing address, or billing information anytime at <a href="mailto:photosinthemail.com">photosinthemail.com</a>.</p>
 
 
 @stop
