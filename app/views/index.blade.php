@@ -118,7 +118,7 @@
                                     </div>
                                 </div>
                                 <ul class="facts">
-                                    <li>15 high-quality photos each month</li>
+                                    <li>12 high-quality photos each month</li>
                                     <li>You choose 'em, we print 'em</li>
                                     <li>Picture frame quality photos</li>
                                     <li><strong>Free shipping</strong></li>
@@ -202,7 +202,7 @@
                                     </div>
                                 </div>
                                 <ul class="facts">
-                                    <li>25 high-quality photos each month</li>
+                                    <li>24 high-quality photos each month</li>
                                     <li>You choose 'em, we print 'em</li>
                                     <li>Picture frame quality photos</li>
                                     <li><strong>Free shipping</strong></li>
