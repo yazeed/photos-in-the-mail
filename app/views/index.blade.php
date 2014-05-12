@@ -16,11 +16,11 @@
                                     <header class="heading">
                                         <h2 class="name">Package</h2>
                                         <span class="monthly-rate">
-                                            <sub>Monthly</sub><sup>$</sup><span class="num">2</span>
+                                            <sub>Monthly</sub><sup>$</sup><span class="num">3</span>
                                         </span>
                                     </header>
                                         <div class="text-wrapper">
-                                            <p>For just two dollars a month, we'll send you <strong>5 photos in the mail,</strong> giving you a record of those special moments.</p>
+                                            <p>For just three dollars a month, we'll send you <strong>5 photos in the mail,</strong> giving you a record of those special moments.</p>
                                         </div>
                                     <div class="photos-num">
                                         <div class="img-wrap">
@@ -54,21 +54,21 @@
                                                 <p>Don’t worry, you can switch at any time:</p>
                                                 <ul>
                                                     <li>
-                                                        <strong class="price">$2<span>/mo</span></strong>
+                                                        <strong class="price">$3<span>/mo</span></strong>
                                                         <div class="photo-no">
                                                             <span>x5</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <strong class="price">$5<span>/mo</span></strong>
+                                                        <strong class="price">$6<span>/mo</span></strong>
                                                         <div class="photo-no">
-                                                            <span>x15</span>
+                                                            <span>x12</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <strong class="price">$8<span>/mo</span></strong>
+                                                        <strong class="price">$9<span>/mo</span></strong>
                                                         <div class="photo-no">
-                                                            <span>x25</span>
+                                                            <span>x24</span>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -99,18 +99,18 @@
                                     <header class="heading">
                                         <h2 class="name">Collection</h2>
                                         <span class="monthly-rate">
-                                            <sub>Monthly</sub><sup>$</sup><span class="num">5</span>
+                                            <sub>Monthly</sub><sup>$</sup><span class="num">6</span>
                                         </span>
                                     </header>
                                     <div class="text-wrapper">
-                                        <p>For five dollars a month, we'll send you <strong>15 photos in the mail,</strong> so you can keep every moment that matters</p>
+                                        <p>For six dollars a month, we'll send you <strong>12 photos in the mail,</strong> so you can keep every moment that matters</p>
                                     </div>
                                     <div class="photos-num">
                                         <div class="img-wrap">
                                             <img class="main-img" src="{{ URL::asset('/assets/images/icon01.png') }}" width="73" height="45" alt="icon">
                                             <img class="active-img" src="{{ URL::asset('/assets/images/icon01-active.png') }}" width="73" height="45" alt="icon">
                                         </div>
-                                        <span> x <em class="num">15</em></span>
+                                        <span> x <em class="num">12</em></span>
                                     </div>
                                     <div class="btns">
                                         <a href="#" class="btn-select">Select &gt;</a>
@@ -138,21 +138,21 @@
                                                 <p>Don’t worry, you can switch at any time:</p>
                                                 <ul>
                                                     <li>
-                                                        <strong class="price">$2<span>/mo</span></strong>
+                                                        <strong class="price">$3<span>/mo</span></strong>
                                                         <div class="photo-no">
                                                             <span>x5</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <strong class="price">$5<span>/mo</span></strong>
+                                                        <strong class="price">$6<span>/mo</span></strong>
                                                         <div class="photo-no">
-                                                            <span>x15</span>
+                                                            <span>x12</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <strong class="price">$8<span>/mo</span></strong>
+                                                        <strong class="price">$9<span>/mo</span></strong>
                                                         <div class="photo-no">
-                                                            <span>x25</span>
+                                                            <span>x24</span>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -183,18 +183,18 @@
                                     <header class="heading">
                                         <h2 class="name">Album</h2>
                                         <span class="monthly-rate">
-                                            <sub>Monthly</sub><sup>$</sup><span class="num">8</span>
+                                            <sub>Monthly</sub><sup>$</sup><span class="num">9</span>
                                         </span>
                                     </header>
                                         <div class="text-wrapper">
-                                            <p>For eight dollars a month, we'll send you <strong>25 real photos in the mail</strong>, enough to share with all your friends (&amp; your granny).</p>
+                                            <p>For nine dollars a month, we'll send you <strong>24 real photos in the mail</strong>, enough to share with all your friends (&amp; your granny).</p>
                                         </div>
                                     <div class="photos-num">
                                         <div class="img-wrap">
                                             <img class="main-img" src="{{ URL::asset('/assets/images/icon01.png') }}" width="73" height="45" alt="icon">
                                             <img class="active-img" src="{{ URL::asset('/assets/images/icon01-active.png') }}" width="73" height="45" alt="icon">
                                         </div>
-                                        <span> x <em class="num">25</em></span>
+                                        <span> x <em class="num">24</em></span>
                                     </div>
                                     <div class="btns">
                                         <a href="#" class="btn-select">Select &gt;</a>
@@ -223,21 +223,21 @@
                                                 <p>Don’t worry, you can switch at any time:</p>
                                                 <ul>
                                                     <li>
-                                                        <strong class="price">$2<span>/mo</span></strong>
+                                                        <strong class="price">$3<span>/mo</span></strong>
                                                         <div class="photo-no">
                                                             <span>x5</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <strong class="price">$5<span>/mo</span></strong>
+                                                        <strong class="price">$6<span>/mo</span></strong>
                                                         <div class="photo-no">
-                                                            <span>x15</span>
+                                                            <span>x12</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <strong class="price">$8<span>/mo</span></strong>
+                                                        <strong class="price">$9<span>/mo</span></strong>
                                                         <div class="photo-no">
-                                                            <span>x25</span>
+                                                            <span>x24</span>
                                                         </div>
                                                     </li>
                                                 </ul>

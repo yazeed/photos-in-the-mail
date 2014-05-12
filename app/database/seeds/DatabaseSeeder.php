@@ -36,7 +36,7 @@ class PlansTableSeeder extends Seeder {
         $plan1 = [
             'id' => 'package',
             'name' => 'Package',
-            'amount' => 200,
+            'amount' => 300,
             'interval' => 'month',
             'currency' => 'usd',
             'metadata' => ['prints_per_month' => 5]
@@ -44,18 +44,18 @@ class PlansTableSeeder extends Seeder {
         $plan2 = [
             'id' => 'collection',
             'name' => 'Collection',
-            'amount' => 500,
+            'amount' => 600,
             'interval' => 'month',
             'currency' => 'usd',
-            'metadata' => ['prints_per_month' => 15]
+            'metadata' => ['prints_per_month' => 12]
         ];
         $plan3 = [
             'id' => 'album',
             'name' => 'Album',
-            'amount' => 800,
+            'amount' => 900,
             'interval' => 'month',
             'currency' => 'usd',
-            'metadata' => ['prints_per_month' => 25]
+            'metadata' => ['prints_per_month' => 24]
         ];
         
         Stripe::setApiKey(getenv('STRIPE_SECRET'));
